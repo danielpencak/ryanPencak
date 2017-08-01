@@ -6,11 +6,17 @@
     "react-scripts": "1.0.10"
   },
   "dependencies": {
+    "morgan": "^1.8.2",
     "react": "^15.6.1",
+    "react-bootstrap": "^0.31.2",
     "react-dom": "^15.6.1"
   },
+  "engines": {
+    "node": "8.2.1"
+  },
+  "proxy": "http://localhost:3001",
   "scripts": {
-    "start": "react-scripts start",
+    "start": "react-scripts start & nodemon server/bin/www",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
