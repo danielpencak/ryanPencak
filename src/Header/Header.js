@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, NavItem, Nav} from 'react-bootstrap';
 import GitHubLogo from './Assets/github.png';
-// import LinkedInLogo from './Assets/linkedin.png';
+import LinkedInLogo from './Assets/linkedin.png';
 import Resume from './Assets/ryanpencak.pdf';
 import Share from './Assets/share.png';
 import './Header.css';
@@ -19,7 +19,7 @@ export default class Header extends Component {
                 <img className="gitHubLogo" src={ GitHubLogo } alt={ 'GitHub' } />
               </a>
               <a className="anchors" href="https://github.com/RyanPencak">
-                <img className="gitHubLogo" src={ GitHubLogo } alt={ 'GitHub' } />
+                <img className="gitHubLogo" src={ LinkedInLogo } alt={ 'GitHub' } />
               </a>
               {/* <a className="anchors" href="https://github.com/RyanPencak">
                 <img className="linkedInLogo" src={ LinkedInLogo } alt={ 'LinkedIn' } />
