@@ -21,7 +21,7 @@
   width: 25px;
 }
 
-.Header a {
+.Header .anchors {
   height: 27px;
   width: 27px;
   display: flex;

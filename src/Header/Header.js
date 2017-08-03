@@ -15,13 +15,13 @@ export default class Header extends Component {
             <Navbar.Brand>
               <div className="name">
               Ryan Pencak
-              <a href="https://www.linkedin.com/in/ryanpencak">
+              <a className="anchors" href="https://www.linkedin.com/in/ryanpencak">
                 <img className="linkedInLogo" src={ LinkedInLogo } alt={ 'LinkedIn' } />
               </a>
-              <a href="https://github.com/RyanPencak">
+              <a className="anchors" href="https://github.com/RyanPencak">
                 <img className="gitHubLogo" src={ GitHubLogo } alt={ 'GitHub' } />
               </a>
-              <a href={ Resume }>
+              <a className="anchors" href={ Resume }>
                 <img className="share" src={ Share } alt={ 'Resume' } />
               </a>
             </div>
