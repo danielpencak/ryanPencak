@@ -1,14 +1,15 @@
 import React, { Component } from 'react';
 import './App.css';
+import Header from '../Header/Header.js';
+import About from '../About/About.js';
 
-class App extends Component {
+export default class App extends Component {
   render() {
     return (
       <div className="App">
-        Hello
+          <Header />
+          <About />
       </div>
     );
   }
 }
-
-export default App;
