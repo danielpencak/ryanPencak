@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Navbar, NavItem, Nav} from 'react-bootstrap';
 import GitHubLogo from './Assets/github.png';
-import LinkedInLogo from './Assets/linkedin.png';
+// import LinkedInLogo from './Assets/linkedin.png';
 import Resume from './Assets/ryanpencak.pdf';
 import Share from './Assets/share.png';
 import './Header.css';
