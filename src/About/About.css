@@ -1,0 +1,17 @@
+.About .headshot {
+  height: 200px;
+  width: 181px;
+}
+
+.About .pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.About {
+  height: 500px;
+  border: 1px solid black;
+}
