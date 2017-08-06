@@ -3,30 +3,30 @@
   /*border: 1px solid black;*/
 }
 
-.About .headshot {
-  height: 200px;
-  width: 181px;
-}
-
 .About .pic {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   height: 200px;
-  /*border: 1px solid black;*/
+}
+
+.About .headshot {
+  height: 200px;
+  width: 181px;
+  box-shadow: 1px 4px 5px #999;
 }
 
 .About .summary {
-    padding: 30px 50px 40px 10px;
+  padding: 2% 8% 2% 15px;
 }
 
-.About .show-grid h1 {
-  font-size: 20px;
-}
-
-.About .show-grid.skills {
-  padding-top: 30px;
-}
+/*.About .show-grid {
+  padding-top: 2%;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}*/
 
 .About .container {
   background-color: #DDD;
@@ -36,4 +36,50 @@
 
 .pic.col-md-3.col-xs-12 {
   padding-right: 0;
+}
+
+.About .show-grid h1 {
+  font-size: 20px;
+  /*text-align: center;*/
+  padding: 25px 20px 0 50px;
+  margin-top: 0;
+}
+
+
+.About ul {
+  padding: 0 0 0 68px;
+}
+
+@media (max-width: 767px) {
+  .About .pic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+  }
+  .About .summary {
+    padding: 5% 15px 5% 15px;
+  }
+  .About .container {
+    margin: 0px 20px 20px 20px;
+  }
+  .About .show-grid h1 {
+    padding: 0 15% 0 25%;
+  }
+  .About .show-grid ul {
+    padding: 0 0 0 28%;
+  }
+  .About .show-grid li {
+    margin-bottom: 5px;
+  }
+  .About .languages, .About .cs {
+    margin-bottom: 40px;
+  }
+  .About .electrical {
+    margin-bottom: 15px;
+  }
+  .About .show-grid .line {
+    padding-top: 20px;
+    border-top: 1px solid black;
+  }
 }

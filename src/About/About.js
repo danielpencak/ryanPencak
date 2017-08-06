@@ -21,12 +21,12 @@ export default class About extends Component {
               </p>
             </Col>
           </Row>
-          <Row className="show-grid skills">
-            <Col xs={12} md={4}>
-              <h1>
+          <Row className="show-grid">
+            <Col xs={12} sm={4} md={4} lg={4}>
+              <h1 className="line">
                 Programming Languages
               </h1>
-              <ul>
+              <ul className="languages">
                 <li>Python (proficient)</li>
                 <li>C (proficient)</li>
                 <li>MIPS</li>
@@ -37,11 +37,11 @@ export default class About extends Component {
                 <li>Bash Script</li>
               </ul>
             </Col>
-            <Col xs={12} md={4}>
+            <Col xs={12} sm={4} md={4} lg={4}>
               <h1>
                 Computer Science Courses
               </h1>
-              <ul>
+              <ul className="cs">
                 <li>Operating Systems - Fall 2017 (C)</li>
                 <li>Computer Organization and Programming (C and MIPS)</li>
                 <li>Data Structures and Algorithms (Python)</li>
@@ -49,11 +49,11 @@ export default class About extends Component {
                 <li>AP Computer Science (Java)</li>
               </ul>
             </Col>
-            <Col xs={12} md={4}>
+            <Col xs={12} sm={4} md={4} lg={4}>
               <h1>
                 Electrical Engineering Skills
               </h1>
-              <ul>
+              <ul className="electrical">
                 <li>Circuit Design and Analysis</li>
                 <li> Linear Systems and Signal Processing</li>
                 <li>PCB Design and Production</li>
