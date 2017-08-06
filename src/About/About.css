@@ -1,3 +1,8 @@
+.About {
+  height: 500px;
+  /*border: 1px solid black;*/
+}
+
 .About .headshot {
   height: 200px;
   width: 181px;
@@ -5,13 +10,30 @@
 
 .About .pic {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   height: 200px;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
 }
 
-.About {
-  height: 500px;
-  border: 1px solid black;
+.About .summary {
+    padding: 30px 50px 40px 10px;
+}
+
+.About .show-grid h1 {
+  font-size: 20px;
+}
+
+.About .show-grid.skills {
+  padding-top: 30px;
+}
+
+.About .container {
+  background-color: #DDD;
+  box-shadow: 1px 4px 5px #999;
+  padding: 15px;
+}
+
+.pic.col-md-3.col-xs-12 {
+  padding-right: 0;
 }
