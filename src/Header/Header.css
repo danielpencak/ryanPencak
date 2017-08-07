@@ -30,9 +30,6 @@
   justify-content: center;
 }
 
-.Header {
-  /*opacity: 0.8;*/
-}
 
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
   color: #9d9d9d;
@@ -47,5 +44,5 @@
 }
 
 .Header a:hover {
-  transform: scale(1.6);
+  transform: scale(1.1);
 }

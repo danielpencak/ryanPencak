@@ -23,9 +23,6 @@ export default class Header extends Component {
                 <a className="anchors" href="https://www.linkedin.com/in/ryanpencak">
                   <img className="linkedInLogo" src={ LinkedInLogo } alt={ 'GitHub' } />
                 </a>
-                {/* <a className="anchors" href="https://github.com/RyanPencak">
-                  <img className="linkedInLogo" src={ LinkedInLogo } alt={ 'LinkedIn' } />
-                </a> */}
                 <a className="anchors" href={ Resume }>
                   <img className="share" src={ Share } alt={ 'Resume' } />
                 </a>

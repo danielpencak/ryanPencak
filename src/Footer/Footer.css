@@ -1,0 +1,63 @@
+.Footer {
+  margin-top: 20px;
+  /*padding: 15px;*/
+}
+
+.Footer .anchors {
+  height: 27px;
+  width: 27px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.Footer .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Footer .gitHubLogo {
+  height: 20px;
+  width: 20px;
+}
+.Footer .share {
+  height: 25px;
+  width: 25px;
+}
+.Footer .linkedInLogo {
+  height: 25px;
+  width: 25px;
+}
+
+.Footer .subFooter {
+  background-color: #2D2D2D;
+}
+
+.Footer .contact {
+  background-color: #2D2D2D;
+  opacity: 0.8;
+}
+
+.Footer h3, .Footer h4 {
+  color: #9d9d9d;
+  padding-left: 50px;
+}
+
+.Footer .nav>li>a {
+  padding-right: 60px;
+  color: #9d9d9d;
+  padding-bottom: 5px;
+  padding-top: 10px;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+  background-color: #2D2D2D;
+  color: #fff;
+}
+
+.Footer .row {
+  margin: 0;
+}
