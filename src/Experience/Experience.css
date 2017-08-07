@@ -1,0 +1,28 @@
+.Experience {
+  margin-top: 15px;
+}
+
+.Experience span {
+  float: right;
+}
+
+.Experience .container {
+  background-color: #DDD;
+  padding: 15px;
+  box-shadow: 1px 4px 5px #999;
+  /*border: 2px solid black;*/
+}
+
+.Experience h1 {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.Experience h3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Experience h4 {
+  padding-left: 15px;
+}
