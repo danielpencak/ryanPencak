@@ -36,6 +36,7 @@ export default class Header extends Component {
           <Navbar.Collapse>
             <Nav pullRight>
               <NavItem eventKey={1} href="#">About</NavItem>
+              <NavItem eventKey={1} href="#">Education</NavItem>
               <NavItem eventKey={2} href="#">Experience</NavItem>
               <NavItem eventKey={3} href="#">Project</NavItem>
               <NavItem eventKey={4} href="#">Contact</NavItem>

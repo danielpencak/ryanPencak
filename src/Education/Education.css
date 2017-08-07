@@ -1,0 +1,27 @@
+.Education span {
+  float: right;
+}
+
+.Education .container {
+  background-color: #DDD;
+  padding: 15px;
+  box-shadow: 1px 4px 5px #999;
+}
+
+.Education h1 {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.Education h3 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.Education h4 {
+  padding-left: 15px;
+}
+
+.Education p {
+  padding-left: 15px;
+}
