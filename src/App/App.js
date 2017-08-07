@@ -3,8 +3,9 @@ import './App.css';
 import Header from '../Header/Header.js';
 import About from '../About/About.js';
 import Education from '../Education/Education.js';
-import Footer from '../Footer/Footer.js';
 import Experience from '../Experience/Experience.js'
+import Projects from '../Projects/Projects.js'
+import Footer from '../Footer/Footer.js';
 
 export default class App extends Component {
   render() {
@@ -14,6 +15,7 @@ export default class App extends Component {
           <About />
           <Education />
           <Experience />
+          <Projects />
           <Footer />
       </div>
     );
