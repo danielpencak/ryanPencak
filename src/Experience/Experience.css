@@ -26,3 +26,9 @@
 .Experience h4 {
   padding-left: 15px;
 }
+
+@media (max-width: 767px) {
+  .Experience .container {
+    margin: 0px 20px 20px 20px;
+  }
+}

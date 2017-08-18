@@ -30,7 +30,6 @@
   justify-content: center;
 }
 
-
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
   color: #9d9d9d;
 }
@@ -41,6 +40,9 @@
 
 .navbar-inverse {
   border-radius: 0;
+  background-image: none;
+  background-color: #444242;
+  border-color: #444242;
 }
 
 .Header a:hover {

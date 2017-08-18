@@ -33,11 +33,11 @@
 }
 
 .Footer .subFooter {
-  background-color: #2D2D2D;
+  background-color: #444242;
 }
 
 .Footer .contact {
-  background-color: #2D2D2D;
+  background-color: #514e4e;
   opacity: 0.8;
 }
 
@@ -54,10 +54,27 @@
 }
 
 .nav>li>a:focus, .nav>li>a:hover {
-  background-color: #2D2D2D;
+  background-color: #514e4e;
   color: #fff;
 }
 
 .Footer .row {
   margin: 0;
+}
+
+@media (max-width: 767px) {
+  .pull-right {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .Footer .nav>li>a {
+    padding-right: 5%;
+  }
+
+  .Footer h3, .Footer h4 {
+    text-align: center;
+  }
 }
