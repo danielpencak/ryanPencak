@@ -76,5 +76,6 @@
 
   .Footer h3, .Footer h4 {
     text-align: center;
+    padding-right: 50px;
   }
 }
