@@ -10,7 +10,7 @@ export default class Experience extends Component {
           <Row>
             <Col>
               <h1>Experience</h1>
-              <h3><b>Argonne National Laboratory</b> | Lemont, IL <span>May 2017 – August 2017</span></h3>
+              <h3 className="job"><b>Argonne National Laboratory</b> <b className="bar">|</b> Lemont, IL <span>May 2017 – August 2017</span></h3>
               <h4>Summer Research Intern, Center for Nanoscale Materials, Theory and Modeling Group</h4>
               <ul>
                 <li>Algorithm development for OCEAN, an ab-initio software package for DFT and BSE calculations of chemical structures</li>
@@ -18,7 +18,7 @@ export default class Experience extends Component {
                 <li>Benchmarking pseudopotentials for XANES calculations to increase user experience and computational accuracy</li>
               </ul>
 
-              <h3><b>Northwestern University School of Law</b> | Chicago, IL <span>July 2015 – August 2015</span></h3>
+              <h3 className="job"><b>Northwestern University School of Law</b> <b className="bar">|</b> Chicago, IL <span>July 2015 – August 2015</span></h3>
               <h4>Summer Research Assistant for Professor Philip Postlewaite</h4>
               <ul>
                 <li>Edited revised portions of Professor Postlewaite’s International Tax Treatise</li>
