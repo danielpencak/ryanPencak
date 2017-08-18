@@ -5,8 +5,31 @@ import LinkedInLogo from './Assets/linkedin.png';
 import Resume from './Assets/ryanpencak.pdf';
 import Share from './Assets/share.png';
 import './Header.css';
+import Scroll from 'react-scroll';
+
+let scroll = Scroll.animateScroll;
 
 export default class Header extends Component {
+  scrollToAbout() {
+    scroll.scrollTo(60);
+  }
+
+  scrollToEducation() {
+    scroll.scrollTo(538);
+  }
+
+  scrollToExperience() {
+    scroll.scrollTo(740);
+  }
+
+  scrollToProject() {
+    scroll.scrollTo(1130);
+  }
+
+  scrollToContact() {
+    scroll.scrollToBottom();
+  }
+
   render() {
     return (
       <div className="Header">
@@ -32,11 +55,11 @@ export default class Header extends Component {
           </Navbar.Header>
           <Navbar.Collapse>
             <Nav pullRight>
-              <NavItem eventKey={1} href="#">About</NavItem>
-              <NavItem eventKey={1} href="#">Education</NavItem>
-              <NavItem eventKey={2} href="#">Experience</NavItem>
-              <NavItem eventKey={3} href="#">Project</NavItem>
-              <NavItem eventKey={4} href="#">Contact</NavItem>
+              <NavItem eventKey={1} href="#" onClick={this.scrollToAbout}>About</NavItem>
+              <NavItem onClick={this.scrollToEducation} eventKey={1} href="#">Education</NavItem>
+              <NavItem onClick={this.scrollToExperience} eventKey={2} href="#">Experience</NavItem>
+              <NavItem onClick={this.scrollToProject} eventKey={3} href="#">Project</NavItem>
+              <NavItem onClick={this.scrollToContact} eventKey={4} href="#">Contact</NavItem>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
