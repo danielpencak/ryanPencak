@@ -32,3 +32,14 @@
     margin: 0px 20px 20px 20px;
   }
 }
+
+@media (max-width: 991px) {
+  .Projects .project {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Projects .bar {
+    display: none;
+  }
+}
