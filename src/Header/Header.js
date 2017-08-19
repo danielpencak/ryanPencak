@@ -6,6 +6,7 @@ import Resume from './Assets/ryanpencak.pdf';
 import Share from './Assets/share.png';
 import './Header.css';
 import Scroll from 'react-scroll';
+import Headroom from 'react-headroom';
 
 let scroll = Scroll.animateScroll;
 
@@ -32,38 +33,40 @@ export default class Header extends Component {
 
   render() {
     return (
-      <div className="Header">
-        <Navbar inverse collapseOnSelect>
-          <Navbar.Header>
-            <Navbar.Brand>
-              <div className="name">
-                <h3>
-                  Ryan Pencak
-                </h3>
-                <a className="anchors" href="https://github.com/RyanPencak">
+      <Headroom>
+        <div className="Header">
+          <Navbar inverse collapseOnSelect>
+            <Navbar.Header>
+              <Navbar.Brand>
+                <div className="name">
+                  <h3>
+                    Ryan Pencak
+                  </h3>
+                  <a className="anchors" href="https://github.com/RyanPencak">
                   <img className="gitHubLogo" src={ GitHubLogo } alt={ 'GitHub' } />
                 </a>
                 <a className="anchors" href="https://www.linkedin.com/in/ryanpencak">
-                  <img className="linkedInLogo" src={ LinkedInLogo } alt={ 'GitHub' } />
-                </a>
-                <a className="anchors" href={ Resume }>
-                  <img className="share" src={ Share } alt={ 'Resume' } />
-                </a>
-              </div>
-              </Navbar.Brand>
-            <Navbar.Toggle />
-          </Navbar.Header>
-          <Navbar.Collapse>
-            <Nav pullRight>
-              <NavItem eventKey={1} href="#" onClick={this.scrollToAbout}>About</NavItem>
-              <NavItem onClick={this.scrollToEducation} eventKey={1} href="#">Education</NavItem>
-              <NavItem onClick={this.scrollToExperience} eventKey={2} href="#">Experience</NavItem>
-              <NavItem onClick={this.scrollToProject} eventKey={3} href="#">Project</NavItem>
-              <NavItem onClick={this.scrollToContact} eventKey={4} href="#">Contact</NavItem>
-            </Nav>
-          </Navbar.Collapse>
-        </Navbar>
-      </div>
+                <img className="linkedInLogo" src={ LinkedInLogo } alt={ 'GitHub' } />
+              </a>
+              <a className="anchors" href={ Resume }>
+                <img className="share" src={ Share } alt={ 'Resume' } />
+              </a>
+            </div>
+          </Navbar.Brand>
+          <Navbar.Toggle />
+        </Navbar.Header>
+        <Navbar.Collapse>
+          <Nav pullRight>
+            <NavItem eventKey={1} href="#" onClick={this.scrollToAbout}>About</NavItem>
+            <NavItem onClick={this.scrollToEducation} eventKey={1} href="#">Education</NavItem>
+            <NavItem onClick={this.scrollToExperience} eventKey={2} href="#">Experience</NavItem>
+            <NavItem onClick={this.scrollToProject} eventKey={3} href="#">Project</NavItem>
+            <NavItem onClick={this.scrollToContact} eventKey={4} href="#">Contact</NavItem>
+          </Nav>
+        </Navbar.Collapse>
+      </Navbar>
+    </div>    
+      </Headroom>
     );
   }
 }
