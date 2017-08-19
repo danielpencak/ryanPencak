@@ -14,7 +14,7 @@ let Element = Scroll.Element;
 
 export default class Header extends Component {
   scrollToAbout() {
-    scroll.scrollTo(60);
+    scroll.scrollToTop();
   }
 
   scrollToEducation() {
@@ -60,7 +60,7 @@ export default class Header extends Component {
         <Navbar.Collapse>
           <ul className="nav navbar-nav navbar-right">
                <li>
-                  <Link to="about" spy={true} smooth={true}>About</Link>
+                  <Link to="" onClick={this.scrollToAbout} spy={true} smooth={true}>About</Link>
 
                 </li>
                 <li>
