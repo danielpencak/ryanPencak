@@ -8,28 +8,9 @@ import Share from './Assets/share.png';
 import Scroll from 'react-scroll';
 
 let scroll = Scroll.animateScroll;
+let Link = Scroll.Link;
 
 export default class Footer extends Component {
-  scrollToAbout() {
-    scroll.scrollTo(60);
-  }
-
-  scrollToEducation() {
-    scroll.scrollTo(538);
-  }
-
-  scrollToExperience() {
-    scroll.scrollTo(740);
-  }
-
-  scrollToProject() {
-    scroll.scrollTo(1130);
-  }
-
-  scrollToContact() {
-    scroll.scrollToBottom();
-  }
-
   render() {
     return (
       <div className="Footer">
@@ -42,12 +23,39 @@ export default class Footer extends Component {
             </Col>
             <Col xs={12} sm={6} md={4}>
               {/* <Navbar.Collapse> */}
-                <Nav pullRight>
-                  <NavItem onClick={this.scrollToAbout} eventKey={1} href="#">About</NavItem>
-                  <NavItem onClick={this.scrollToEducation} eventKey={1} href="#">Education</NavItem>
-                  <NavItem onClick={this.scrollToExperience} eventKey={2} href="#">Experience</NavItem>
-                  <NavItem onClick={this.scrollToProject} eventKey={3} href="#">Project</NavItem>
-                </Nav>
+              {/* <Nav pullRight>
+                <ul className="nav navbar-nav navbar-right">
+                  <li>
+                    <Link to="about" spy={true} smooth={true}>About</Link>
+
+                  </li>
+                  <li>
+                    <Link to="education" spy={true} smooth={true}>Education</Link>
+
+                  </li>
+                  <li>
+                    <Link to="experience" spy={true} smooth={true}>Experience</Link>
+
+                  </li>
+                  <li>
+                    <Link to="projects" spy={true} smooth={true}>Projects</Link>
+
+                  </li>
+                  <li>
+                    <Link onClick={this.scrollToContact} spy={true} smooth={true}>Contact</Link>
+
+                  </li>
+                </ul>
+
+              </Nav> */}
+                {/* <Nav pullRight> */}
+                <div className="nav pull-right">
+                  <Link className="footerNav" spy={true} smooth={true} to="about">About</Link>
+                  <Link className="footerNav" spy={true} smooth={true} to="education">Education</Link>
+                  <Link className="footerNav" spy={true} smooth={true} to="experience">Experience</Link>
+                  <Link className="footerNav" spy={true} smooth={true} to="education">Project</Link>
+                </div>
+                {/* </Nav> */}
               {/* </Navbar.Collapse> */}
             </Col>
           </Row>

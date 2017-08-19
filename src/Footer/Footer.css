@@ -62,12 +62,30 @@
   margin: 0;
 }
 
+.Footer .footerNav {
+  padding-right: 60px;
+  color: #9d9d9d;
+  padding-bottom: 5px;
+  padding-top: 10px;
+  position: relative;
+  display: block;
+  /*padding-left: 300px;*/
+  /*padding: 10px 15px;*/
+}
+
+.Footer .footerNav:hover {
+  text-decoration: none;
+  background-color: #514e4e;
+  color: #fff;
+  cursor: pointer;
+}
+
 @media (max-width: 767px) {
   .pull-right {
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
   .Footer .nav>li>a {
