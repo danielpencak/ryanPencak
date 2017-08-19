@@ -70,7 +70,7 @@
   position: relative;
   display: block;
   /*padding-left: 300px;*/
-  /*padding: 10px 15px;*/
+  padding-left: 15px;
 }
 
 .Footer .footerNav:hover {
@@ -78,6 +78,10 @@
   background-color: #514e4e;
   color: #fff;
   cursor: pointer;
+}
+
+.Footer .email {
+  margin-bottom: 20px;
 }
 
 @media (max-width: 767px) {

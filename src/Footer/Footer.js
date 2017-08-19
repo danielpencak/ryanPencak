@@ -11,6 +11,10 @@ let scroll = Scroll.animateScroll;
 let Link = Scroll.Link;
 
 export default class Footer extends Component {
+  scrollToAbout() {
+    scroll.scrollToTop();
+  }
+
   render() {
     return (
       <div className="Footer">
@@ -19,7 +23,7 @@ export default class Footer extends Component {
             <Col xs={12} sm={6} md={8}>
               <h3>Ryan Pencak</h3>
               <h4>Chicago, IL</h4>
-              <h4>ryanpencak@gmail.com</h4>
+              <h4 className="email">ryanpencak@gmail.com</h4>
             </Col>
             <Col xs={12} sm={6} md={4}>
               {/* <Navbar.Collapse> */}
@@ -49,12 +53,11 @@ export default class Footer extends Component {
 
               </Nav> */}
                 {/* <Nav pullRight> */}
-                <div className="nav pull-right">
-                  <Link className="footerNav" spy={true} smooth={true} to="about">About</Link>
-                  <Link className="footerNav" spy={true} smooth={true} to="education">Education</Link>
-                  <Link className="footerNav" spy={true} smooth={true} to="experience">Experience</Link>
-                  <Link className="footerNav" spy={true} smooth={true} to="education">Project</Link>
-                </div>
+                {/* <div className="nav pull-right">
+                  <NavItem onClick={this.scrollToAbout}>About</NavItem>
+                  <Link className="footerNav" spy={true} smooth={true} to="about">Education</Link>
+                  <Link className="footerNav" spy={true} smooth={true} to="education">Experience</Link>
+                </div> */}
                 {/* </Nav> */}
               {/* </Navbar.Collapse> */}
             </Col>
