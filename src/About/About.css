@@ -1,8 +1,3 @@
-.About {
-  /*height: 500px;*/
-  /*border: 1px solid black;*/
-}
-
 .About .pic {
   display: flex;
   justify-content: center;
@@ -20,14 +15,6 @@
   padding: 2% 8% 2% 15px;
 }
 
-/*.About .show-grid {
-  padding-top: 2%;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: space-between;
-}*/
-
 .About .container {
   background-color: #DDD;
   box-shadow: 1px 4px 5px #999;
@@ -41,11 +28,9 @@
 
 .About .show-grid h1 {
   font-size: 20px;
-  /*text-align: center;*/
   padding: 25px 20px 0 50px;
   margin-top: 0;
 }
-
 
 .About ul {
   padding: 0 0 0 68px;

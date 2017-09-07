@@ -1,6 +1,5 @@
 /* eslint-disable max-params*/
 /* eslint-disable no-console*/
-'use strict';
 
 const express = require('express');
 const path = require('path');

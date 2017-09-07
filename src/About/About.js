@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
-import { Grid, Row, Col } from 'react-bootstrap';
-import Picture from './Assets/picture.JPG';
+/* eslint-disable no-unused-vars, max-len */
+
 import './About.css';
+import { Col, Grid, Row } from 'react-bootstrap';
+import React, { Component } from 'react';
+import Picture from './Assets/picture.JPG';
 import Scroll from 'react-scroll';
 
-let scroll = Scroll.animateScroll;
-let Link = Scroll.Link;
-let Element = Scroll.Element;
+const scroll = Scroll.animateScroll;
+const Link = Scroll.Link;
+const Element = Scroll.Element;
 
 export default class About extends Component {
   render() {
