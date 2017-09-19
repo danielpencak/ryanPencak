@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+/* eslint-disable no-unused-vars, max-len */
+
 import './Experience.css';
-import { Grid, Row, Col } from 'react-bootstrap';
+import { Col, Grid, Row } from 'react-bootstrap';
+import React, { Component } from 'react';
 import Scroll from 'react-scroll';
 
-let scroll = Scroll.animateScroll;
-let Link = Scroll.Link;
-let Element = Scroll.Element;
+const Element = Scroll.Element;
 
 export default class Experience extends Component {
   render() {
@@ -34,7 +34,7 @@ export default class Experience extends Component {
               </Col>
             </Row>
           </Grid>
-        </div>    
+        </div>
       </Element>
     );
   }

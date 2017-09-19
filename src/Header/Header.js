@@ -1,16 +1,17 @@
-import React, { Component } from 'react';
-import { Navbar, NavItem, Nav} from 'react-bootstrap';
-import GitHubLogo from './Assets/github.png';
-import LinkedInLogo from './Assets/linkedin.png';
-import Resume from './Assets/ryanpencak.pdf';
-import Share from './Assets/share.png';
-import './Header.css';
-import Scroll from 'react-scroll';
-import Headroom from 'react-headroom';
+/* eslint-disable no-unused-vars, max-len */
 
-let scroll = Scroll.animateScroll;
-let Link = Scroll.Link;
-let Element = Scroll.Element;
+import './Header.css';
+import React, { Component } from 'react';
+import GitHubLogo from './Assets/github.png';
+import Headroom from 'react-headroom';
+import LinkedInLogo from './Assets/linkedin.png';
+import { Navbar } from 'react-bootstrap';
+import Resume from './Assets/ryanpencak.pdf';
+import Scroll from 'react-scroll';
+import Share from './Assets/share.png';
+
+const scroll = Scroll.animateScroll;
+const Link = Scroll.Link;
 
 export default class Header extends Component {
   scrollToAbout() {
@@ -80,13 +81,6 @@ export default class Header extends Component {
 
                 </li>
               </ul>
-          {/* <Nav pullRight>
-            <NavItem eventKey={1} href="#" onClick={this.scrollToAbout}>About</NavItem>
-            <NavItem onClick={this.scrollToEducation} eventKey={1} href="#">Education</NavItem>
-            <NavItem onClick={this.scrollToExperience} eventKey={2} href="#">Experience</NavItem>
-            <NavItem onClick={this.scrollToProject} eventKey={3} href="#">Project</NavItem>
-            <NavItem onClick={this.scrollToContact} eventKey={4} href="#">Contact</NavItem>
-          </Nav> */}
         </Navbar.Collapse>
       </Navbar>
     </div>
